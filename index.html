@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamiento!!</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="index.css" defer>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    
+    <div id="div_fondo">
+        <div id="inline_decorado">
+            <div><img src="/iconos/flor1-izquierda.png" alt="" class="flor_deco"></div>
+            <div id="nos_casamos"><p id="nos">Nélida y Mauricio</p> <p id="cas">¡Nos Casamos!</p></div>
+            <div><img src="/iconos/flor1-derecha.png" alt="" class="flor_deco"></div>
+        </div>
+     
+
+    </div>
+    <div id="nuestra_historia">
+        <h3>Lorep ipsum</h3>
+        <p id="parag_historia">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum."</p>
+    </div>
+    <div id="carrusel_container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="shadow"></div>
+                    <img src="/Fotos/Fondo.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="shadow"></div>
+                    <img src="/Fotos/11060091_10206349311039606_3348442097490826997_n.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="shadow"></div>
+                    <img src="/Fotos/20170319_182501A.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="shadow"></div>
+                    <img src="/Fotos/WhatsApp Image 2024-02-11 at 12.42.32 AM.jpeg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div id="seccion_info">
+        <div id="tarjetas_container">
+            <div class="tarjeta" id="tarjeta1">
+                <div class="img_info_cont"> <img src="/iconos/casa muestra.jpg" alt="" class="img_info"></div>
+                <div class="info_info">
+                   
+                </div>
+            </div>
+            <div class="tarjeta" id="tarjeta2">
+                <div class="img_info_cont"> <img src="/iconos/casa muestra.jpg" alt=""  class="img_info"></div>
+                <div class="info_info"></div>
+            </div>
+            <div class="tarjeta" id="tarjeta3">
+                <div class="img_info_cont"> <img src="/iconos/casa muestra.jpg" alt=""  class="img_info"></div>
+                <div class="info_info">
+                    <div class="info1 infogr"><h2>Recepción</h2></div>
+                    <div class="info2 infogr"><h3>12/10/2024 -Hora a confirmar</h3></div>
+                    <div class="info3 infogr"> <h2>Espacio San Carlos</h2></div>
+                    <div class="info4 infogr"><p>Av Bernando H'oggigins 6207, Córdoba</p></div>
+                    <div class="info5 infogr"> <a href="https://maps.app.goo.gl/teFpD4zXq8oe3KV17"><button>Ver ubicación</button></a></div>
+                    
+                    
+                   
+                    
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="contador">
+        <div class="timer"></div>
+        <div id="dias" class="timer">
+            <span id="days" class="contador_numeros"></span>
+            <p class="contador_unidad_tiempo">días</p>
+        </div>
+        <div id="horas" class="timer">
+            <span id="hours" class="contador_numeros"></span>
+            <p class="contador_unidad_tiempo">horas</p>
+        </div>
+        <div id="minutos" class="timer">
+            <span id="minutes" class="contador_numeros"></span>
+            <p class="contador_unidad_tiempo">minutos</p>
+        </div>
+        <div id="segundos" class="timer">
+            <span id="seconds" class="contador_numeros"></span>
+            <p class="contador_unidad_tiempo">segundos</p>
+        </div>
+        <div></div>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 2,
+                },
+                640: {
+                    slidesPerView: 3,
+                }
+            }
+        })
+    </script>
+</body>
+</html>

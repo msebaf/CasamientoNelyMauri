@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "Maratre";
+    src: url(/fonts/maratre/Maratre.otf);
+}
+@font-face {
+    font-family: "Janda";
+    src: url(/fonts/janda_stylish_script/JandaStylishScript.ttf);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+#div_fondo {
+   
+    background-image: url("/Fotos/atardecer-verano-1-U60630035788kWl-1200x630@abc.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   background-position: center bottom;
+    background-attachment: fixed;
+    height: 30em;
+
+}
+#inline_decorado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30em;
+   
+}
+#nos_casamos{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+   
+
+#nos{
+    font-family: "Maratre";
+    font-size: 8em;
+    margin-bottom: 0px;
+    text-align: center;
+    color: beige;
+}
+#cas{
+    font-family: "Janda";
+    font-size: 4em;
+    align-self: flex-end;
+    margin-top: 0px;
+    text-align: center;
+    color: beige;
+}
+
+.flor_deco{
+   height: 20em;
+}
+ 
+
+ #nuestra_historia{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 6em;
+ }
+ #parag_historia{
+    width: 70%;
+    display: flex;
+ }
+ #carrusel_container{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, white 0%, white 100%); /*sin utilidad por el momento */
+ }
+ .mySwiper{
+    width: 100%;
+    height: 100%;
+ }
+ .swiper-wrapper{
+     align-items: center;
+     background-color: white;
+ }
+ .swiper-slide{
+    height: 400px;
+    background: #eee;
+    
+    margin-bottom: 10px;
+    
+    overflow: hidden;
+    position: relative; /*al pedo probablemente */
+ }
+ .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0,0,0,0) 0px 0px 0px; /*darle sombra al contendor de foto*/
+ }
+
+ .shadow{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)); /*darle tonalidad a las fotos*/
+ }
+
+ #seccion_info{
+    height: 580px;
+    background-color: #ECE7E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+ }
+
+ #tarjetas_container{
+    height: 560px;
+    width: 90%;
+    border-radius: 10%;
+    background-color: #ECE7E3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+
+ .tarjeta{
+    width: 30%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 3%;
+   
+ }
+
+ .img_info_cont{
+    height: 50%;
+    border-radius: 10%;
+ }
+
+ .img_info{
+    width: 100%;
+    height: 100%;
+    
+ }
+
+ .info_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    
+ }
+
+ .infogr{
+    height: 20%;
+ }
+
+ #contador{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-top: 1em;
+   background-color: black;
+   color: aliceblue;
+   
+ }
+
+ .timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2;
+ }
+
+ .contador_numeros{
+    font-size: 4em;
+    font-weight: 900;
+   
+ }
+ .contador_unidad_tiempo{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0px;
+ }
