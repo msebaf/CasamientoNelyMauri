@@ -15,7 +15,7 @@ body{
 }
 
 
-
+/*
 #div_fondo {
    
     background-image: url("/Fotos/atardecer-verano-1-U60630035788kWl-1200x630@abc.webp");
@@ -64,6 +64,70 @@ body{
    height: 20em;
 }
  
+*/
+
+#seccion_1{
+   height: 30em;
+   background-color: black;
+   
+}
+#novios{
+    height: 30em;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    z-index: auto;
+}
+#adorno{
+    height: 25em;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    z-index: auto;
+}
+#nos_casamos{
+   position: relative;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+}
+
+  
+
+#nos{
+   font-family: "Maratre";
+   font-size: 8em;
+   margin-top: 8%;
+   margin-bottom: 0px;
+   text-align: center;
+   color: gold;
+}
+#cas{
+   font-family: "Janda";
+   font-size: 4em;
+   margin-top: 0px;
+   text-align: center;
+   color: gold;
+}
+
+
+
+.triangulo {
+ 
+   bottom: 0;
+   left: 50%;
+  
+   width: 0;
+   height: 0;
+   border-left: 50vw solid transparent; /* Tamaño del triángulo */
+   border-right: 50vw solid transparent; /* Tamaño del triángulo */
+   border-top: 100px solid black; /* Tamaño del triángulo y color */
+ }
+
+
+
 
  #nuestra_historia{
      display: flex;
