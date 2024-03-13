@@ -140,18 +140,21 @@ body{
     display: flex;
  }
  #carrusel_container{
-    height: 600px;
+   
     display: flex;
     align-items: center;
     background: linear-gradient(120deg, white 0%, white 100%); /*sin utilidad por el momento */
  }
  .mySwiper{
     width: 100%;
-    height: 100%;
+    
+ }
+ .swiper{
+   background-color: #ECE7E3;
  }
  .swiper-wrapper{
      align-items: center;
-     background-color: white;
+     background-color: #ECE7E3;
  }
  .swiper-slide{
     height: 400px;
@@ -275,4 +278,47 @@ body{
     font-size: 1.5em;
     font-weight: 500;
     margin-top: 0px;
+ }
+
+ #seccion_codigo_vestimenta{
+   height: 30em;
+   background-color: #ECE7E3;
+   padding-top: 3em;
+ }
+ 
+ #titulo_codigo_vestimenta{
+    font-family: "sans-serif";
+    font-weight: 900;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 0px;
+ }
+
+
+
+
+ #tipos_vestimenta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1em;
+   
+    
+ }
+
+ .boton_vestimenta{
+   background-color: whitesmoke;
+   border-radius: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px 40px 5px 40px;
+   height: fit-content;
+ }
+ .texto_boton_vestimenta{
+   padding-top: 0px;
+   padding-bottom: 0px;
+   margin-top: 0px;
+   margin-bottom: 0px;
  }
