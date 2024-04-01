@@ -46,3 +46,24 @@ updateCountdown();
 // Refresh every second
 setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
 
+
+
+function ejVestimentaFormal(){
+    console.log("Esta es la vestimenta formal");
+    document.getElementById("ejemploVestimenta").src = "iconos/formal.jpg";
+    document.getElementById("imagenVestimentaContainer").style.display = "flex";
+  
+}
+
+
+function ejVestimentaFormalSport(){
+    console.log("Esta es la vestimenta formal sport");
+    document.getElementById("ejemploVestimenta").src = "iconos/EleganteSport.jpg";
+    document.getElementById("imagenVestimentaContainer").style.display = "flex";
+}
+
+
+function cerrarImagen(){
+    console.log("Se cerro la imagen");
+    document.getElementById("imagenVestimentaContainer").style.display = "none";
+}

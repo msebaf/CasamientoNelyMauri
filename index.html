@@ -31,13 +31,18 @@
 
     
     <div id="nuestra_historia">
-        <h3>Lorep ipsum</h3>
-        <p id="parag_historia">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum."</p>
+    
+        <p id="parag_historia"> Hace 12 años que comenzó nuestra historia y, siendo cómplices de nuestros anhelos más profundos, 
+        recorrimos este camino colmado de alegrías y triunfos, pero también de desafíos y dificultades que nos ayudaron a crecer
+         como personas y como pareja, y que, apoyándonos mutuamente, supimos superar. Hoy, con nuestros corazones llenos de alegría
+          y emoción, queremos anunciar que estamos próximos a cumplir uno de nuestros más grandes anhelos: emprender una nueva etapa,
+           un hito en la historia de nuestro amor que significará el inicio de nuevos proyectos. Pronto celebraremos nuestra tan 
+           esperada boda y realmente deseamos que todos puedan compartir con nosotros este momento único de nuestras vidas.
+        </p>
     </div>
+
+    <div class="trianguloVerticeSuperior"></div>
+    <div id="espacioTriangulo"></div>
     <div id="carrusel_container">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -115,7 +120,8 @@
     </div>
     <div id="seccion_codigo_vestimenta">
         <h1 id="titulo_codigo_vestimenta">CODIGO DE VESTIEMENTA</h1>
-        <div id="tipos_vestimenta"><div class="boton_vestimenta"><p class="texto_boton_vestimenta">Formal</p><p class="texto_boton_vestimenta">(ver ejemplo)</p></div><div> <p>Ó</p></div><div class="boton_vestimenta"><p class="texto_boton_vestimenta">Formal Sport</p><p class="texto_boton_vestimenta">(ver ejemplo)</p></div> </div>
+        <div id="tipos_vestimenta"><div class="boton_vestimenta" onclick="ejVestimentaFormal()"><p class="texto_boton_vestimenta">Formal</p><p class="texto_boton_vestimenta">(ver ejemplo)</p></div><div> <p>Ó</p></div><div class="boton_vestimenta" onclick="ejVestimentaFormalSport()"><p class="texto_boton_vestimenta">Formal Sport</p><p class="texto_boton_vestimenta">(ver ejemplo)</p></div> </div>
+        <div id="imagenVestimentaContainer"><img id="ejemploVestimenta" src="" alt="" onclick="cerrarImagen()"></div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
