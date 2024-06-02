@@ -67,3 +67,25 @@ function cerrarImagen(){
     console.log("Se cerro la imagen");
     document.getElementById("imagenVestimentaContainer").style.display = "none";
 }
+
+
+
+let hospedajeVisible=false;
+function mostrarHospedajes() {
+    const hospedajes = document.getElementById("hospedajes");
+    hospedajeVisible = !hospedajeVisible;
+
+    if (hospedajeVisible) {
+        // Primero, asegúrate de que el elemento se pueda ver con opacidad 0
+        hospedajes.style.display = 'flex';
+        setTimeout(() => {
+            hospedajes.classList.add('visible');
+        }, 10); // Un pequeño retraso para permitir que el navegador aplique el cambio de display antes de la transición
+    } else {
+        // Transición de opacidad a 0 antes de ocultar completamente
+        hospedajes.classList.remove('visible');
+        setTimeout(() => {
+            hospedajes.style.display = 'none';
+        }, 500); // El tiempo debe coincidir con la duración de la transición de opacidad
+    }
+}

@@ -22,6 +22,7 @@
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
     
 }
 
@@ -377,3 +378,74 @@ body{
 
  }
 
+
+#contendor_hospedajes{
+   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+#boton_hospedajes{
+   background-color: black;
+   color: aliceblue;
+   font-weight: 500;
+   font-size: 1,5em;
+   text-align: center;
+   padding-top: 1em;
+   
+   margin-top:1%;
+   margin-bottom: 0px;
+   width: 25%;
+   border-radius: 15px;
+}
+
+#hospedajes{
+   
+   border: 1px solid black;
+   padding: 3px;
+   margin-top: 10px;
+   /*cambia a flex por js */
+   display: none;
+   opacity: 0;
+   transition: opacity 0.5s ease-out;
+   flex-direction: column;
+   
+}
+#hospedajes.visible {
+   display: flex; /* o el valor que prefieras, como block o inline-block */
+   opacity: 1;
+}
+.fila-hospedajes{
+   display: flex;
+   flex-direction: row;
+}
+.tarjeta-hotel{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  border: 1px solid black;
+  padding: 0px;
+  margin: 2px;
+   
+}
+.datos-hotel{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.datos-hotel p, .datos-hotel h4, .datos-hotel a {
+    margin: 0;
+  text-align: center;
+}
+
+.foto-hotel img{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
