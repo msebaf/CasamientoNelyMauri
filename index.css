@@ -114,14 +114,14 @@ body{
    margin-top: 8%;
    margin-bottom: 0px;
    text-align: center;
-   color: gold;
+   color: goldenrod;
 }
 #cas{
    font-family: "Janda";
    font-size: 4em;
    margin-top: 0px;
    text-align: center;
-   color: gold;
+   color: goldenrod;
 }
 
 
@@ -494,6 +494,7 @@ body{
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   background-color: #d5cec7;
 }
 
 #datos-transferencia p{
