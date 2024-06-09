@@ -642,4 +642,16 @@ body{
    color: goldenrod;
 }
 
+.boton_vestimenta{
+background-color: whitesmoke;
+border-radius: 100px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 5px 40px 5px 40px;
+height: fit-content;
+margin-right: 2.5%;
+margin-left: 2.5%;
  }
+
+}
