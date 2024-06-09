@@ -288,31 +288,7 @@ body{
  }
 
 
- @media (max-width: 930px) {
-
-   #seccion_info{
-    height: 100%;
-    background-color: #ECE7E3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
- }
-
-    #tarjetas_container{
-       flex-direction: column;
-       height: 100%;
-       width: 100%;
-    }
-
-    .tarjeta{
-      width: 80%;
-      margin-bottom: 10px;
-
- }
-
- }
+ 
 
 
 
@@ -573,3 +549,43 @@ body{
    padding-top: 1em;
    padding-bottom: 2em;
 }
+
+
+
+
+@media (max-width: 930px) {
+
+   #seccion_info{
+    height: 100%;
+    background-color: #ECE7E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+ }
+
+    #tarjetas_container{
+       flex-direction: column;
+       height: 100%;
+       width: 100%;
+    }
+
+    .tarjeta{
+      width: 80%;
+      margin-bottom: 10px;
+
+ }
+
+ .contador_numeros{
+   font-size: medium;
+   font-weight: 900;
+  
+}
+.contador_unidad_tiempo{
+   font-size: medium;
+   font-weight: 500;
+   margin-top: 0px;
+}
+
+ }
