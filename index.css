@@ -596,4 +596,50 @@ body{
    max-width: 100%;
 }
 
+#seccion_1{
+   height: 15em;
+   background-color: black;
+   
+}
+#novios{
+    height: 15em;
+    width: 22.5%;
+    position: absolute;
+    right: 0;
+    z-index: auto;
+}
+#adorno{
+    height: 12.5em;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    z-index: auto;
+}
+#nos_casamos{
+   position: relative;
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+}
+
+  
+
+#nos{
+   font-family: "Maratre";
+   font-size: 4em;
+   margin-top: 8%;
+   margin-bottom: 0px;
+   text-align: center;
+   color: goldenrod;
+}
+#cas{
+   font-family: "Janda";
+   font-size: 2em;
+   margin-top: 0px;
+   text-align: center;
+   color: goldenrod;
+}
+
  }
