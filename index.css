@@ -201,6 +201,7 @@ body{
  .swiper-slide img{
     height: 100%;
     width: 100%;
+    max-width: 100%;
     object-fit: cover;
     box-shadow: rgba(0,0,0,0) 0px 0px 0px; /*darle sombra al contendor de foto*/
  }
@@ -284,6 +285,36 @@ body{
     align-items: inherit;
 
  }
+
+
+ @media (max-width: 930px) {
+
+   #seccion_info{
+    height: 100%;
+    background-color: #ECE7E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+ }
+
+    #tarjetas_container{
+       flex-direction: column;
+       height: 100%;
+       width: 100%;
+    }
+
+    .tarjeta{
+      width: 80%;
+      margin-bottom: 10px;
+
+ }
+
+
+
+
+
 
  #contador{
    display: flex;
@@ -495,12 +526,40 @@ body{
    align-items: center;
    justify-content: center;
    background-color: #d5cec7;
+   display: none;
 }
 
 #datos-transferencia p{
    font-size: 1em;
    text-align: center;
       
+}
+
+#contenedor-boton{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#boton-datos-cuenta{
+   background-color: #d5cec7;
+   border-radius: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid black;
+   width:max-content ;
+   padding-left: 5px;
+   padding-right: 5px;
+   margin-right: 5%;
+   margin-left: 5%;
+   margin-top: 20%;
+}
+
+#boton-datos-cuenta:hover{
+   background-color: #b4aca5;
+   scale: 1.1;
 }
 
 #sugerencias-canciones{

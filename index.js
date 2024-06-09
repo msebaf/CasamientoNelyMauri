@@ -89,3 +89,23 @@ function mostrarHospedajes() {
         }, 500); // El tiempo debe coincidir con la duración de la transición de opacidad
     }
 }
+
+
+let datosVisibles=false;
+
+function verDatosCuenta(){
+    const datosCuenta = document.getElementById("datos-transferencia");
+    const textboton = document.getElementById("boton-datos-cuenta-texto");
+    if (datosVisibles == false) {
+        datosCuenta.style.display = 'flex';
+
+        textboton.textContent = 'Ocultar datos de cuenta';
+
+    } else {
+        datosCuenta.style.display = 'none';
+
+        textboton.textContent = 'Ver datos de cuenta';
+    }
+
+    datosVisibles = !datosVisibles;
+}
