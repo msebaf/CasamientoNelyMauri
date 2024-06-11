@@ -586,6 +586,9 @@ background-color: #d5cec7;
    
    
 }
+#seccion-final div{
+  width: 100%;
+}
 
 #despedidaA{
    margin-top: 40px;
@@ -598,6 +601,26 @@ background-color: #d5cec7;
    margin-top: 20px;
    font-family: "Playfair";
 }
+
+.borde-final{
+   width: 80%;
+   height: 200px;
+   
+}
+.borde-final-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+#texto{
+   text-align: center;
+}
+#texto p{
+   margin: 0px;
+}
+
+
 @media (max-width: 930px) {
 
    #seccion_info{
