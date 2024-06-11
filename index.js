@@ -109,3 +109,18 @@ function verDatosCuenta(){
 
     datosVisibles = !datosVisibles;
 }
+
+function validarFormulario() {
+    // Obtener los valores de los campos
+    var cancion = document.getElementById('cancion').value;
+    
+    // Verificar si los campos requeridos están completos
+    if (cancion.trim() === "") {
+        alert("Por favor escrinar el nombre de la cancion.");
+        return false; // Evitar el envío del formulario
+    }
+
+    // Puedes agregar más validaciones si es necesario
+
+    return true; // Permitir el envío del formulario
+}

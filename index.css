@@ -551,6 +551,17 @@ body{
 }
 
 
+.datos-cancion{
+   border-radius: 25px;
+}
+
+#contenedor-boton-submit{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 8px;
+}
 
 
 @media (max-width: 930px) {

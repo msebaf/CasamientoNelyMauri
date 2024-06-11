@@ -287,7 +287,21 @@
 
     <div id="sugerencias-canciones">
 
-        <h1>Aca va el formulario de sugerencia si es que puedo subirlo a un server</h1>
+        <h1>¿QUE CANCIONES NO PUEDEN FALTAR ?</h1>
+        <p>¡Ayúdanos sugiriendo las canciones que pensás que no pueden faltar en nuestra boda!</p>
+        <form action="process_form.php" method="post" onsubmit="return validarFormulario()">
+            <div>
+                <input  class="datos-cancion"  type="text" name="nombre" id="nombre" placeholder="Tu nombre (Opcional)">
+                <input class="datos-cancion" type="text" name="cancion" id="cancion" placeholder="Canción">
+                <input class="datos-cancion" type="text" name="artista" id="artista" placeholder="Artista">
+                <input class="datos-cancion"type ="text" name="enlace" id="enlace" placeholder="YouTube-Spotify (opcional)" >
+            </div>
+             <div id="contenedor-boton-submit">
+                <input class="datos-cancion" type="submit" value="Enviar">
+            </div>
+
+        </form>
+
 
     </div>
     
