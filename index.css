@@ -553,6 +553,7 @@ body{
 
 .datos-cancion{
    border-radius: 25px;
+   height: 20px;
 }
 
 #contenedor-boton-submit{
@@ -561,6 +562,11 @@ body{
    justify-content: center;
    align-items: center;
    padding-top: 8px;
+   
+}
+#contenedor-boton-submit input{
+background-color: #d5cec7;
+
 }
 
 
@@ -668,4 +674,18 @@ margin-left: 2.5%;
  .texto_boton_vestimenta{
    font-size: small;
  }
+}
+
+@media (max-width: 720px) {
+
+#contenedor-datos-cancion{
+display: flex;
+flex-direction: column;
+
+}
+#contenedor-datos-cancion input{
+   margin-bottom: 5px;
+
+}
+
 }
