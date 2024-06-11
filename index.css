@@ -604,9 +604,13 @@ background-color: #d5cec7;
 }
 
 .borde-final{
-   width: 80%;
+   width: 55%;
    height: 200px;
    
+}
+
+#imagen1{
+   scale: 0.8;
 }
 .borde-final-container{
    display: flex;
