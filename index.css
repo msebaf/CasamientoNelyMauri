@@ -812,7 +812,7 @@ flex-direction: column;
    position: absolute; /* Saca el elemento del flujo normal */
    top: 50%; /* Posiciona el elemento al 50% desde la parte superior del contenedor */
    left: 50%; /* Posiciona el elemento al 50% desde el lado izquierdo del contenedor */
-   
+   transform: translate(-50%, -60%); /* Mueve el elemento hacia arriba e izquierda en un 50% de su propio tamaño */
    text-align: center;
    width: 80%;
    font-family: "Dancing";
