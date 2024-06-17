@@ -514,8 +514,8 @@ body{
 
 #titulo-regalos{
    font-family: "Playwrite";
-   scale: 1.5;
    padding-bottom: 1.5%;
+   font-size: x-large !important;
    max-width: 90%;
    
 }
