@@ -60,7 +60,7 @@ function ejVestimentaFormal(){
 function ejVestimentaFormalSport(){
     console.log("Esta es la vestimenta formal sport");
     document.getElementById("imagenVestimenta1").src = "iconos/elgspt2.jpg";
-    document.getElementById("imagenVestimenta2").src = "iconos/elgspt1.jpg";
+    document.getElementById("imagenVestimenta2").src = "iconos/elgspt3.jpg";
     document.getElementById("imagenVestimentaContainer").style.display = "flex";
 }
 
