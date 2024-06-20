@@ -1,60 +1,49 @@
-
-
-//===
-// VARIABLES
-//===
-const DATE_TARGET = new Date('10/12/2024 7:30 PM');
-// DOM for render
+const DATE_TARGET = new Date('2024-10-12T00:00:00-03:00');
 const SPAN_DAYS = document.querySelector('span#days');
 const SPAN_HOURS = document.querySelector('span#hours');
 const SPAN_MINUTES = document.querySelector('span#minutes');
 const SPAN_SECONDS = document.querySelector('span#seconds');
-// Milliseconds for the calculations
+
 const MILLISECONDS_OF_A_SECOND = 1000;
 const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
 const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
-const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24;
 
-//===
-// FUNCTIONS
-//===
-
-/**
- * Method that updates the countdown and the sample
- */
 function updateCountdown() {
-    // Calcs
-    const NOW = new Date()
-    const DURATION = DATE_TARGET - NOW;
-    const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
-    const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
-    const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
-    const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
-    // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+    // Obtener la fecha y hora actual en la zona horaria de Argentina
+    const now = new Date();
+    const offset = now.getTimezoneOffset() * 60 * 1000; // Convertir el offset de minutos a milisegundos
+    const currentDateTime = now.getTime() - offset;
 
-    // Render
-    SPAN_DAYS.textContent = REMAINING_DAYS;
-    SPAN_HOURS.textContent = REMAINING_HOURS;
-    SPAN_MINUTES.textContent = REMAINING_MINUTES;
-    SPAN_SECONDS.textContent = REMAINING_SECONDS;
+    // Calcular la diferencia de tiempo en milisegundos
+    const duration = DATE_TARGET.getTime() - currentDateTime;
+    
+    if (duration < 0) {
+        // Si la fecha objetivo ya ha pasado, mostrar todos los valores en 0 o algo así
+        SPAN_DAYS.textContent = '0';
+        SPAN_HOURS.textContent = '0';
+        SPAN_MINUTES.textContent = '0';
+        SPAN_SECONDS.textContent = '0';
+        return;
+    }
+    
+    // Calcular los días, horas, minutos y segundos restantes
+    const remainingDays = Math.floor(duration / MILLISECONDS_OF_A_DAY);
+    const remainingHours = Math.floor((duration % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+    const remainingMinutes = Math.floor((duration % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+    const remainingSeconds = Math.floor((duration % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+
+    // Actualizar el contenido en el DOM
+    SPAN_DAYS.textContent = remainingDays;
+    SPAN_HOURS.textContent = remainingHours;
+    SPAN_MINUTES.textContent = remainingMinutes;
+    SPAN_SECONDS.textContent = remainingSeconds;
 }
 
-//===
-// INIT
-//===
+// Iniciar el contador regresivo y actualizar cada segundo
 updateCountdown();
-// Refresh every second
 setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
 
-
-
-function ejVestimentaFormal(){
-    console.log("Esta es la vestimenta formal");
-    document.getElementById("imagenVestimenta1").src = "iconos/elg.jpeg";
-    document.getElementById("imagenVestimenta2").src = "iconos/elg2.jpg";
-    document.getElementById("imagenVestimentaContainer").style.display = "flex";
-  
-}
 
 
 function ejVestimentaFormalSport(){
