@@ -812,6 +812,18 @@ margin-left: 2.5%;
 
 @media (max-width: 720px) {
 
+
+   .swiper-slide{
+      height: 400px;
+      background: #eee;
+      
+      margin-bottom: 10px;
+      
+      overflow: hidden;
+      position: relative; /*al pedo probablemente */
+    
+   }
+
 #contenedor-datos-cancion{
 display: flex;
 flex-direction: column;
