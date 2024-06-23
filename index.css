@@ -821,7 +821,8 @@ margin-left: 2.5%;
       
       overflow: hidden;
       position: relative; /*al pedo probablemente */
-    
+      border-left: none;
+      border-right: none;
    }
 
 #contenedor-datos-cancion{
