@@ -54,6 +54,13 @@ function ejVestimentaFormalSport(){
 }
 
 
+function ejVestimentaFormal(){
+    console.log("Esta es la vestimenta formal");
+    document.getElementById("imagenVestimenta1").src = "iconos/elg.jpeg";
+    document.getElementById("imagenVestimenta2").src = "iconos/elg2.jpg";
+    document.getElementById("imagenVestimentaContainer").style.display = "flex";
+}
+
 function cerrarImagen(){
     console.log("Se cerro la imagen");
     document.getElementById("imagenVestimentaContainer").style.display = "none";
