@@ -844,6 +844,10 @@ margin-left: 2.5%;
       border-right: none;
    }
 
+
+#mensaje-pedido h1{
+   font-size: medium;
+}
 #contenedor-datos-cancion{
 display: flex;
 flex-direction: column;
