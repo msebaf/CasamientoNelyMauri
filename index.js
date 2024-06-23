@@ -114,7 +114,7 @@ function validarFormulario() {
     
     // Verificar si los campos requeridos están completos
     if (cancion.trim() === "") {
-        alert("Por favor escriba el nombre de una cancion.");
+        alert("Por favor escribí el nombre de una canción.");
         return false; // Evitar el envío del formulario
     }
 

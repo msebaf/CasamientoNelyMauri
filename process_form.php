@@ -25,10 +25,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Ejecutar la consulta
     if ($stmt->execute()) {
-        echo "Datos guardados correctamente";
+       echo "<script>alert('GRACIAS!!!');</script>";
     } else {
-        echo "Error: " . $stmt->error;
+      echo "<script>alert('Hubo un problema, por favor intentalo de nuevo mas tarde');</script>";
     }
+
+   // if ($stmt->execute()) {
+   //     echo "Datos guardados correctamente";
+   // } else {
+    //    echo "Error: " . $stmt->error;
+   // }
 
     // Cerrar la conexión
     $stmt->close();
