@@ -10,13 +10,12 @@ const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
 const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24;
 
 function updateCountdown() {
-    // Obtener la fecha y hora actual en la zona horaria de Argentina
+    // Obtener la fecha y hora actual en la zona horaria de Buenos Aires
     const now = new Date();
-    const offset = now.getTimezoneOffset() * 60 * 1000; // Convertir el offset de minutos a milisegundos
-    const currentDateTime = now.getTime() - offset;
+    const buenosAiresTime = new Date(now.toLocaleString("en-US", {timeZone: "America/Argentina/Buenos_Aires"}));
 
     // Calcular la diferencia de tiempo en milisegundos
-    const duration = DATE_TARGET.getTime() - currentDateTime;
+    const duration = DATE_TARGET.getTime() - buenosAiresTime.getTime();
     
     if (duration < 0) {
         // Si la fecha objetivo ya ha pasado, mostrar todos los valores en 0 o algo así
@@ -121,4 +120,19 @@ function validarFormulario() {
     // Puedes agregar más validaciones si es necesario
 
     return true; // Permitir el envío del formulario
+}
+
+
+
+
+let icono = document.getElementById("icono-play");
+const musica = new Audio("musica/au.mp3");
+function play(){
+    if (icono.src.includes("play")) {
+        icono.src = "iconos/pausa.png";
+        musica.play();
+    } else {
+        icono.src = "iconos/play.png";
+        musica.pause();
+    }
 }

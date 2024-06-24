@@ -98,6 +98,19 @@ body{
  
 */
 
+#icono-play{
+   position: fixed;
+   bottom: 3%;
+   left: 3%;
+   z-index: 10;
+   width: 75px;
+}
+
+#icono-play:hover{
+   cursor: pointer;
+   scale: 1.2;
+}
+
 #seccion_1{
    height: 30em;
    background-color: black;
@@ -730,6 +743,20 @@ background-color: #d5cec7;
    margin: 0px;
 }
 
+#logo-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#logo-instagram{
+   width: 75px;
+}
+
+#logo-instagram:hover{
+   scale: 1.2;
+}
 
 @media (max-width: 930px) {
 
