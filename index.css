@@ -927,4 +927,13 @@ flex-direction: column;
     font-family: Dancing; 
     font-size: large;
  }
+
+
+ #icono-play{
+   position: fixed;
+   bottom: 3%;
+   left: 3%;
+   z-index: 10;
+   width: 50px;
+}
 }
