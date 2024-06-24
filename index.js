@@ -92,15 +92,17 @@ let datosVisibles=false;
 
 function verDatosCuenta(){
     const datosCuenta = document.getElementById("datos-transferencia");
+    const datosCuenta2 = document.getElementById("datos-transferencia2");
     const textboton = document.getElementById("boton-datos-cuenta-texto");
     if (datosVisibles == false) {
         datosCuenta.style.display = 'flex';
+        datosCuenta2.style.display = 'flex';
 
         textboton.textContent = 'Ocultar datos de cuenta';
 
     } else {
         datosCuenta.style.display = 'none';
-
+        datosCuenta2.style.display = 'none';
         textboton.textContent = 'Ver datos de cuenta';
     }
 
