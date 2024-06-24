@@ -362,6 +362,12 @@ body{
    padding-top: 1em;
    padding-bottom: 2.5em;
  }
+
+ #fecha-limite{
+   margin: 0px;
+    font-family: Dancing; 
+    font-size: xx-large;
+ }
  
  #titulo_codigo_vestimenta{
     font-family: "sans-serif";
@@ -445,6 +451,8 @@ body{
    margin-bottom: 1%;
    width: max-content;
    border-radius: 15px;
+   padding-left: 2%;
+   padding-right: 2%;
 }
 
 #hospedajes{
@@ -886,4 +894,10 @@ flex-direction: column;
    
 }
 
+
+#fecha-limite{
+   margin: 0px;
+    font-family: Dancing; 
+    font-size: large;
+ }
 }
